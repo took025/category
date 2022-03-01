@@ -1,14 +1,18 @@
 <div class="main__page">
     <article class="article" *ngFor="let item of data">
         <div class="block">
-            <img [src]="item.img" alt="">
+            <img *ngIf="item.img" [src]="item.img" alt="">
+            <img *ngIf="!item.img" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg" alt="">
             <div class="down__side">
-                <p class="text">
+                <p class="text up">
                     {{item.name}}
                 </p>
                 <span class="text">
                     {{item.price}} gell
                 </span>
+            </div>
+            <div class="hover__block">
+                <button mat-raised-button color="primary">add to cart</button>
             </div>
         </div>
     </article>

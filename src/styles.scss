@@ -1,7 +1,120 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
 body {
-    padding: 0 40px;
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.section {
+    padding: 80px 20px 0 20px;
+    // min-height: calc(100vh - 100px);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    width: 100%;
+    .nav {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background: white;
+        border-bottom: 1px solid #babad3;
+        .logo {
+            height: 90%;
+        }
+    }
+}
+.main__page {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    .article {
+        // flex-grow: 0;
+        // flex-shrink: 0;
+        // flex-basis: 10%;
+        .block {
+            position: relative;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid gray;
+            border-radius: 10px;
+            overflow: hidden;
+            .hover__block {
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.2s;
+                left: 50%;
+                top: 50%;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover {
+                .hover__block {
+                    top: 0;
+                    left: 0;
+                    opacity: 1;
+                    visibility: visible;
+                    transition: 0.2s;
+                    background-color: rgba(179, 229, 252, 0.5);
+                    z-index: 10;
+                }
+            }
+            img {
+                width: 100%;
+                height: 150px;
+                max-width: 80%;
+                object-fit: contain;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .text {
+                text-align: center;
+                color: #004ba0;
+                font-size: 16px;
+                &.up {
+                    font-size: 18px;
+                    color: #1976d2;
+                }
+            }
+        }
+    }
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+.pointer {
+    cursor: pointer;
+    margin-right: 5px;
+    &:hover {
+        path {
+            fill: #1976d2;
+        }
+    }
+}
+
+::ng-deep.cdk-cell.cdk-column-options.mat-cell.mat-column-options {
+    width: 15% !important;
 }

@@ -1,5 +1,14 @@
-<a [routerLink]="['/admin']" routerLinkActive="router-link-active"  >admin</a>
-<br>
-<a [routerLink]="['/home-page']" routerLinkActive="router-link-active"  >home</a>
-
-<router-outlet></router-outlet>
+<!-- <br> -->
+<!-- <a [routerLink]="['/home-page']" routerLinkActive="router-link-active"  >home</a> -->
+<header class="header">
+  <nav class="nav">
+    <a [routerLink]="['/home-page']" class="logo" >
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/ZDF_logo%21_Logo_2021.svg/1200px-ZDF_logo%21_Logo_2021.svg.png" alt="">
+    </a>
+    
+    <a [routerLink]="['/admin']" class="text up" routerLinkActive="router-link-active"  >admin</a>
+  </nav>
+</header>
+<section class="section">
+  <router-outlet></router-outlet>
+</section>

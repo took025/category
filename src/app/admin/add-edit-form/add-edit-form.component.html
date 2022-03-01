@@ -44,6 +44,6 @@
 
 
   <div class="form-element">
-    <button mat-raised-button color="primary" type="submit" class="button">Submit Form</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!TestFromGroup.valid" class="button">Submit Form</button>
   </div>
 </form>

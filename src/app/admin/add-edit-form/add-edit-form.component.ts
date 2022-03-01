@@ -27,11 +27,11 @@ export class AddEditFormComponent implements OnInit {
     this.getData();
     this.TestFromGroup = this._formBuilder.group({
       category: ['', Validators.required],
-      name: ['', Validators.required],
+      name: ['', [Validators.required , Validators.minLength(2) , Validators.maxLength(50)]],
       price: ['', Validators.required],
       quantity: ['', Validators.required],
       img: ['', Validators.required],
-      id: ['', Validators.required],
+      id: [''],
     });
   }
 

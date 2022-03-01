@@ -12,7 +12,7 @@ export class AdminComponent implements OnInit {
   Type:string = ""
   listData: Data[];
   changeOrAdd = false;
-  displayedColumns: string[] = ['id', 'category', 'name', 'price', 'Quantity', 'options'];
+  displayedColumns: string[] = [ 'category', 'name', 'price', 'Quantity', 'options'];
   currentId:number;
 
   constructor(private service: ServiceService,
