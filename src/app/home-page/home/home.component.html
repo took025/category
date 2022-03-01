@@ -1,0 +1,15 @@
+<div class="main__page">
+    <article class="article" *ngFor="let item of data">
+        <div class="block">
+            <img [src]="item.img" alt="">
+            <div class="down__side">
+                <p class="text">
+                    {{item.name}}
+                </p>
+                <span class="text">
+                    {{item.price}} gell
+                </span>
+            </div>
+        </div>
+    </article>
+</div>

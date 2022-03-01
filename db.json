@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "list": [
+    {
+      "category": "cat",
+      "name": "test",
+      "price": "2",
+      "quantity": "5",
+      "id": 5,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg"
+    },
+    {
+      "category": "tech",
+      "name": "pizdec-2",
+      "price": "cat2",
+      "quantity": 1,
+      "img": "231",
+      "id": 8
+    },
+    {
+      "category": "tech",
+      "name": "test",
+      "price": "22",
+      "quantity": 44,
+      "img": "test img",
+      "id": 9
+    },
+    {
+      "category": "tech",
+      "name": "test",
+      "price": "22",
+      "quantity": 43,
+      "img": "test img",
+      "id": 10
+    },
+    {
+      "category": "tech",
+      "name": "test",
+      "price": "22",
+      "quantity": 42,
+      "img": "test img",
+      "id": 11
+    },
+    {
+      "category": "tech",
+      "name": "pizdec-2",
+      "price": "22",
+      "quantity": 14,
+      "img": "123123",
+      "id": 12
+    },
+    {
+      "category": "tech",
+      "name": "waaa",
+      "price": 22,
+      "quantity": 2,
+      "img": "https://images.indepth.dev/images/2020/09/How-to-Use-the-updateOn-Option-in-Angular-Forms.png",
+      "id": 13
+    },
+    {
+      "category": "tech",
+      "name": "t.pkhaladze1@gmail.com",
+      "price": 8,
+      "quantity": 7,
+      "img": "https://images.indepth.dev/images/2020/09/How-to-Use-the-updateOn-Option-in-Angular-Forms.png",
+      "id": 14
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
